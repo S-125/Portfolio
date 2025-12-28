@@ -12,7 +12,7 @@ const Intro = ({ theme }) => {
   className={`${theme}theme w-full min-h-[75vh] flex flex-col md:flex-row justify-around items-center px-4 py-6 md:py-0`}
 >
 
-   <div className="left mx-auto md:ml-6 border-2 rounded-[20px] border-[#6a5989] w-full max-w-[90vw] md:max-w-[40vw] mb-8 md:mb-0">
+   <div className="left mx-auto md:ml-6 border-2 rounded-[20px] border-[#6a5989] w-full max-w-[90vw] md:max-w-[50vw] mb-8 md:mb-0">
 
         <div
           className={`rounded-[17px] p-4 raleway transition-all duration-300 ${
@@ -21,11 +21,17 @@ const Intro = ({ theme }) => {
         >
 
           <div className="font-semibold text-[20px]">
-            Hi, I’m Sritama — a passionate web developer who loves crafting beautiful, responsive, and user-focused websites.
-          </div>
+            Hi, I’m Sritama  <br/>
+Full-Stack Developer | React • Node.js • Express • MongoDB </div>
           <br />
-          With a keen eye for design and a deep curiosity for emerging technologies, I enjoy turning ideas into intuitive digital experiences. Whether it’s building sleek frontends or exploring new frameworks, I’m always eager to push the boundaries of what’s possible on the web.
-          <div className="text-[18px] mt-2">
+          I’m a full-stack developer specializing in the MERN stack, with hands-on
+experience building responsive React frontends and Node.js–Express
+backends integrated with MongoDB. I focus on clean API design,
+authentication flows, and scalable application architecture.
+
+I also have experience working with Flask for academic and prototype
+projects.
+ <div className="text-[18px] mt-2">
             "Bringing creativity and code together to build elegant web experiences."
           </div>
 

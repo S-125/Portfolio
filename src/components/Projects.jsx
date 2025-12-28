@@ -1,15 +1,29 @@
 const projects = [
+  {
+  title: 'WanderLust – Travel Listings Platform',
+  description: 'A full-stack web application that allows users to explore, create, and review travel listings with secure authentication, interactive maps, and cloud-hosted images.',
+  tech: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'Leaflet.js', 'Cloudinary'],
+  link: 'https://wanderlust-y7kx.onrender.com/', 
+},
+
+{
+  title: 'ParkPoint',
+  description: 'ParkPoint is a full-stack vehicle parking platform built with Flask, HTML, CSS, and SQLite, offering a seamless way to manage 4-wheeler parking with just a click.',
+  tech: ['Flask', 'HTML', 'CSS', 'SQLite'],
+  link: 'https://parkpoint.onrender.com', 
+},
+
 {
   title: 'Dish & Dine - Restaurant Website',
   description: 'A full-stack restaurant website built using Flask, HTML, CSS, and SQLite. Integrated with an API to send reservation confirmation emails to users.',
   tech: ['Flask', 'HTML', 'CSS', 'SQLite', 'Email API'],
-  link: 'https://restuarant-app-0gal.onrender.com', // Replace with actual link
+  link: 'https://restuarant-app-0gal.onrender.com', 
 },
   {
   title: 'Tickit - To-Do List App',
   description: 'A task management web app built using Flask, HTML, and CSS with user-friendly filters to organize tasks by category, priority, and completion status.',
   tech: ['HTML', 'CSS', 'Flask'],
-  link: 'https://tickit-hn3n.onrender.com', // replace with your actual repo link
+  link: 'https://tickit-hn3n.onrender.com',
 },
   {
     title: 'Chefify',
@@ -17,17 +31,18 @@ const projects = [
     tech: ['React.js','API','Tailwind CSS'],
     link: 'https://s-125.github.io/Chefify/',
   },
-  {
-  title: 'WordNest-Dictionary App',
-  description: 'A one-stop destination for curious minds looking for a new word,synonyms or an example of a word.',
-  tech: ['React.js','API'],
-  link: 'https://s-125.github.io/WordNest-Dictionary/', // replace with your actual repo link
-},
+  
 {
   title: 'News App',
   description: 'Stay updated with the latest news from across India in your favorite categories.',
   tech: ['React.js','API','Bootstrap'],
   link: 'https://news-app-6skk.onrender.com',
+},
+{
+  title: 'WordNest-Dictionary App',
+  description: 'A one-stop destination for curious minds looking for a new word,synonyms or an example of a word.',
+  tech: ['React.js','API'],
+  link: 'https://s-125.github.io/WordNest-Dictionary/', 
 }
 ];
 

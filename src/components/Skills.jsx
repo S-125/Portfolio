@@ -14,7 +14,7 @@ const skills = [
         description: 'Style language for HTML documents',
       },
       {
-        name: 'JavaScript',
+        name: 'JavaScript (ES6+)',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
         description: 'Programming language for the web',
       },
@@ -29,16 +29,26 @@ const skills = [
         description: 'Utility-first CSS framework',
       },
       {
-         name: 'Bootstrap',
-         logo: 'https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png',
-          description: 'Responsive front-end framework',
+        name: 'Bootstrap',
+        logo: 'https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png',
+        description: 'Responsive front-end framework',
       },
-
+     
     ],
   },
   {
     title: 'Backend',
     tools: [
+      {
+        name: 'Node.js',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg',
+        description: 'JavaScript runtime for server-side development',
+      },
+      {
+        name: 'Express.js',
+        logo: 'https://simpleicons.org/icons/express.svg',
+        description: 'Minimal web application framework for Node.js',
+      },
       {
         name: 'Flask',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg',
@@ -50,19 +60,24 @@ const skills = [
     title: 'Database',
     tools: [
       {
-        name: 'SQLite',
-        logo: 'https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg',
-        description: 'Lightweight SQL database engine',
+        name: 'MongoDB',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg',
+        description: 'NoSQL document-oriented database',
       },
       {
         name: 'MySQL',
         logo: 'https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg',
         description: 'Relational database management system',
       },
+      {
+        name: 'SQLite',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg',
+        description: 'Lightweight SQL database engine',
+      },
     ],
   },
   {
-    title: 'DevOps',
+    title: 'Developer Tools',
     tools: [
       {
         name: 'Git',
@@ -75,20 +90,26 @@ const skills = [
         description: 'Code hosting and collaboration platform',
       },
       {
+        name: 'VS Code',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg',
+        description: 'Source-code editor by Microsoft',
+      },
+      {
+        name: 'Hoppscotch',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hoppscotch/hoppscotch-original.svg',
+        description: 'API testing and development tool',
+      },
+      {
         name: 'Render',
         logo: '/render_logo_clearer.png',
         description: 'Cloud hosting for web apps',
       },
+     
     ],
   },
   {
     title: 'Languages',
     tools: [
-      {
-        name: 'Python',
-        logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg',
-        description: 'High-level programming language',
-      },
       {
         name: 'Java',
         logo: 'https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg',
@@ -99,9 +120,20 @@ const skills = [
         logo: 'https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png',
         description: 'Procedural programming language',
       },
+      {
+        name: 'SQL',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png',
+        description: 'Language for managing relational databases',
+      },
+      {
+        name: 'Python',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg',
+        description: 'A versatile, high-level programming language widely used for web development, automation, data analysis, and backend systems.',
+      },
     ],
   },
 ];
+
 
 const Skills = () => {
   const blocksRef = useRef([]);
@@ -161,7 +193,7 @@ const Skills = () => {
           key={index}
           ref={el => (blocksRef.current[index] = el)}
           className={`w-full max-w-4xl min-h-[125px] flex flex-col md:flex-row items-center
-                      bg-white rounded-xl shadow-lg p-4 opacity-0 transition-all duration-700 ease-out
+                      bg-white rounded-xl shadow-lg p-6 opacity-0 transition-all duration-700 ease-out
                       ${isLargeScreen ? 'translate-x-full' : 'translate-y-4'}`}
         >
          <div
@@ -170,10 +202,10 @@ const Skills = () => {
 
     flex items-center justify-center
 
-    md:w-12 md:h-[125px]   /* fixed width and height for vertical title on md+ */
+    md:w-12 md:h-[125px]  
     md:transform md:-rotate-90 md:origin-center
 
-    w-full h-auto  /* full width on small screens */
+    w-full h-auto
     mb-2 md:mb-0 
   `}
 >
@@ -186,12 +218,12 @@ const Skills = () => {
               <div
                 key={idx}
                 className="flex items-center space-x-2 cursor-pointer"
-                onMouseEnter={e => handleMouseEnter(e, tool.description)}
+                onMouseEnter={e => handleMouseEnter(e, tool.name)}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
               >
-                <img src={tool.logo} alt={`${tool.name} logo`} className="w-10 object-contain " />
-                <div className="text-gray-700 text-[18px] raleway font-semibold">{tool.name}</div>
+                <img src={tool.logo} alt={`${tool.name} logo`} className="w-[75px] object-contain mr-5" />
+                {/* <div className="text-gray-700 text-[18px] raleway font-semibold">{tool.name}</div> */}
               </div>
             ))}
           </div>
